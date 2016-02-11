@@ -118,6 +118,7 @@ describe FormData do
       r = FakeRequest.new(f)
       r.send!
 
+      expect(r.params.length).to eq(3)
       expect(r['image']['filename']).to eq('image.jpg')
       expect(r['text']['filename']).to eq('text.txt')
       expect(r['test']).to eq('value')
