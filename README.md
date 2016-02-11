@@ -68,3 +68,15 @@ req = f.post_request('/test')
 http = Net::HTTP.new('localhost', 80)
 http.request(req) # => ...response
 ```
+
+# Supported Ruby versions
+
+This library requires a Ruby version > 1.9.1 and is tested against the
+following versions:
+
+- Ruby 1.9.2
+- Ruby 1.9.3
+- Ruby 2.0.0
+- Ruby 2.1.8
+- Ruby 2.2.4
+- Ruby 2.3.0
