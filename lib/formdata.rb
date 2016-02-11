@@ -24,7 +24,10 @@ module FormData
     end
 
     def append(name, value = nil, opts = {})
-      name.each { |n, v| append(n, v) } if name.is_a?(Hash)
+      if name.is_a?(Hash)
+        name.each { |n, v| append(n, v) }
+        return
+      end
 
       if value.respond_to?(:read)
         append_file(name, value, opts)
