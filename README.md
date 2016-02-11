@@ -69,9 +69,9 @@ http = Net::HTTP.new('localhost', 80)
 http.request(req) # => ...response
 ```
 
-# Supported Ruby versions
+## Supported Ruby versions
 
-This library requires a Ruby version > 1.9.1 and is tested against the
+This library requires a Ruby version >= 1.9.2 and is tested against the
 following versions:
 
 - Ruby 1.9.2
